@@ -1,0 +1,92 @@
+body{
+    min-width:250px;
+    background: linear-gradient(#87CEEB, #002B5B);
+    min-height: 100vh;
+}
+/* #region */
+.overview{
+    display: flex;
+    justify-content: space-between;
+}
+
+.Features1{    
+    direction: rtl;
+}
+
+.Features1 h3{
+    text-align: center;
+    margin-right: 5em;
+}
+
+.Features1 p{
+    /* margin-right:3em; */
+    line-height: 1rem;
+    /* direction: ltr; */
+
+}
+
+.Features2{
+    display: flex;
+}
+
+
+.overview div::before{
+    /* content:attr("s"); must add any thing to now if active online or not*/
+    background-color: green;
+    border-radius: 50%;
+}
+
+.overview img{
+    max-width: 308px;
+    min-height: 180px;
+    border-radius: 30px;
+    margin-left: 2rem;
+}
+
+/* #endregion */
+
+
+/* #region */
+
+.information_about_doctor{
+    display: flex;
+    flex-direction: column;
+    max-height: 50%;
+    max-width: 20%;
+    margin-left: 2em;
+    margin-top: 5px;
+}
+
+.information_about_doctor span{
+    line-height: 1em;
+    direction: rtl;
+}
+.information_about_doctor div{
+justify-content: center;
+display: flex;
+
+}
+footer {
+    background: linear-gradient(#002B5B, #1A3E7E);
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    width: 100%;
+  }
+  .social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 5px;
+  }
+  
+  .social-icons a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.5em;
+  }
+  
+  .social-icons a:hover {
+    color: #ff9800;
+  }
+  

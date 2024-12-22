@@ -1,0 +1,198 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* يجعل الصفحة تغطي كامل الارتفاع */
+  margin: 0;
+  background: linear-gradient(#87CEEB, #002B5B);
+  color: #333;
+  line-height: 1.6;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: linear-gradient(#002B5B, #1A3E7E);
+  color: white;
+  padding: 10px 20px;
+}
+
+.logo {
+  text-decoration: none;
+  color: white;
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+}
+
+ul li {
+  position: relative;
+  margin: 0 15px;
+}
+
+ul li a {
+  text-decoration: none;
+  color: white;
+  padding: 10px;
+  display: block;
+}
+
+ul li a:hover,
+ul li a.active {
+  background: #fff;
+  color: #200016;
+  border-radius: 20px;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 10px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {
+  background-color: #f1f1f1;
+}
+
+li:hover .dropdown-content {
+  display: block;
+}
+
+.content {
+  flex: 1; /* يجعل المحتوى يتمدد لملء المساحة المتبقية بين الهيدر والفوتر */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+main {
+  margin: 20px;
+}
+
+.departments {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  margin: 20px 0;
+}
+
+.department {
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  width: 250px;
+  text-align: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s, box-shadow 0.2s;
+  overflow: hidden;
+}
+
+.department img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-bottom: 1px solid #ddd;
+}
+
+.department h2 {
+  margin: 10px 0;
+  font-size: 1.5em;
+  color: #4CAF50;
+}
+
+.department p {
+  margin: 10px 15px;
+  font-size: 0.9em;
+  color: #555;
+}
+
+.department a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.department:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+}
+
+#pediatrics-image {
+  width: 100%;
+  max-width: 100px;
+  height: auto;
+  object-fit: cover;
+}
+
+#gynecology-image {
+  width: 100%;
+  max-width: 200px;
+  height: auto;
+  object-fit: cover;
+}
+
+#surgery-image {
+  width: 100%;
+  max-width: 200px;
+  height: auto;
+  object-fit: cover;
+}
+
+#dermatology-image {
+  width: 100%;
+  max-width: 200px;
+  height: auto;
+  object-fit: cover;
+}
+
+/* الفوتر */
+footer {
+  background: linear-gradient(#002B5B, #1A3E7E);
+  color: white;
+  text-align: center;
+  padding: 10px 0;
+  width: 100%;
+  margin-top: auto; /* سيجعل الفوتر ينزل إلى أسفل الصفحة */
+}
+
+.social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 5px;
+}
+
+.social-icons a {
+  text-decoration: none;
+  color: white;
+  font-size: 1.5em;
+}
+
+.social-icons a:hover {
+  color: #ff9800;
+}

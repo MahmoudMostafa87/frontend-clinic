@@ -1,0 +1,147 @@
+/* إعدادات الصفحة */
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* يضمن أن الصفحة تغطي كامل ارتفاع النافذة */
+  margin: 0;
+  background: linear-gradient(#87CEEB, #002B5B);
+  color: #333;
+  line-height: 1.6;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: linear-gradient(#002B5B, #1A3E7E);  color: white;
+  color: white;
+  padding: 10px 20px;
+}
+
+.logo {
+  text-decoration: none;
+  color: white;
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+}
+
+ul li {
+  position: relative;
+  margin: 0 15px;
+}
+
+ul li a {
+  text-decoration: none;
+  color: white;
+  padding: 10px;
+  display: block;
+}
+
+ul li a:hover,
+ul li a.active {
+  background: #fff;
+  color: #200016;
+  border-radius: 20px; 
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 10px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {
+  background-color: #f1f1f1;
+}
+
+li:hover .dropdown-content {
+  display: block;
+}
+
+.container {
+  flex: 1; /* يجعل المحتوى يتمدد لملء المساحة المتبقية */
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 20px;
+  text-align: center;
+}
+
+h1 {
+  color: white;
+}
+
+form {
+  color: white;
+  display: grid;
+  gap: 10px;
+}
+
+label {
+  font-weight: bold;
+}
+
+input,
+textarea {
+  width: 70vh;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 40px;
+}
+
+input[type="submit"] {
+  width: 73vh;
+  background-color: #4CAF50;
+  color: white;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover {
+  background-color: #45a049;
+}
+
+input[type="submit"]:focus {
+  outline: none;
+}
+
+footer {
+  background: linear-gradient(#002B5B, #1A3E7E);  color: white;
+  color: white;
+  text-align: center;
+  padding: 10px 0;
+  width: 100%;
+}
+
+.social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 5px;
+}
+
+.social-icons a {
+  text-decoration: none;
+  color: white;
+  font-size: 1.5em;
+}
+
+.social-icons a:hover {
+  color: #ff9800;
+}
